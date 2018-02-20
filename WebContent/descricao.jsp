@@ -7,9 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-Eu,<input type="text" value="<%= request.getParameter("nome")%>"/>, <input type="text" value="<%= request.getParameter("nacionalidade")%>"/>,
-<input type="text" value="<%= request.getParameter("profissao")%>"/>, <input type="text" value="<%= request.getParameter("rg")%>"/>, 
-<input type="text" value="<%= request.getParameter("cpf")%>"/>, <input type="text" value="<%= request.getParameter("endereco")%>"/>,  
-declaro para os devidos fins, que estou desempregado, sem exercer qualquer labor ou atividade remunerada, assim, sem obter qualquer renda.
+Eu,
+
+<label> <%= request.getParameter("nome")%>,</label>
+<label>Nacionalidade: <%= request.getParameter("nacionalidade")%>,</label>
+<label>Profissão: <%= request.getParameter("profissao")%>,</label>
+<label>RG: <%= request.getParameter("rg")%>,</label>
+<label>CPF: <%= request.getParameter("cpf")%>,</label>
+<label>Endereço: <%= request.getParameter("endereco")%></label>,declaro para os devidos fins, que estou desempregado, sem exercer qualquer labor ou atividade remunerada, assim, sem obter qualquer renda.
 </body>
 </html>
